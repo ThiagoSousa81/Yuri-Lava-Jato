@@ -12,6 +12,18 @@ Web-Site, com sistema de agendamento incluso para um Lava-Jato.
 
 </details>
 
+<details><summary><h2>Páginas</h2></summary>
+
+### WebSite
+
+### Tela de Login
+
+### Tela de Cadastro de Usuários
+
+### Painel de Gerenciamento
+
+</details>
+
 <details><summary><h2>Estruturação de dados (Tabelas)</h2></summary>
   
   ### Veículos
