@@ -2,6 +2,21 @@
 
 Web-Site, com sistema de agendamento incluso para um Lava-Jato.
 
+<h2>Domínio</h2>
+  
+  ### Para o DNS (Servidor que determina o link do site e hospeda as dependências) temos duas possibilidades:
+
+  > OBS.: O uso de servidor pago implicará em R$ 20,00 (vinte reais) adicionais no pagamento da taxa de prestação de serviço
+  
+  | Gratuito | Pago | 
+  | --- | --- |
+  | Quedas constantes | Quedas reduzidas |
+  | Nível de segurança média (devido ao serviço de criptografia provida pela [EBS Security Systems](https://ebs-systems.epizy.com/)) | Nível de segurança alta da parte do servidor |
+  | Gratuito para sempre | Pagamento de taxa mensal para manter o site |
+  
+  ### Quanto essa questão de domínio me fale o quanto antes
+  
+
 <details><summary><h2>Tecnologias</h2></summary>
 
 |  |  |
@@ -23,7 +38,7 @@ Web-Site, com sistema de agendamento incluso para um Lava-Jato.
 >
 > ### Tela de Cadastro (Usuários)
 >
-> ### Painel de Agendamento (Usuários)
+> ### Painel de Agendamento (Usuários) 
 >
 > ### Painel de Gerenciamento (Administrador)
 
