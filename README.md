@@ -1,5 +1,3 @@
-# Yuri Lava Jato
-
 ## Descrição
 
 Web-Site, com sistema de agendamento incluso para um Lava-Jato.
