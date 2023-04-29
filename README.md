@@ -24,7 +24,7 @@ Web-Site, com sistema de agendamento incluso para um Lava-Jato.
 
 </details>
 
-<details><summary><h2>Estruturação de dados</h2></summary>
+<h2>Estruturação de dados</h2>
   
   ### Veículos
   
@@ -63,4 +63,4 @@ Web-Site, com sistema de agendamento incluso para um Lava-Jato.
   - HORA_AGENDAMENTO
   - TERMINIO_AGENDAMENTO
   
-</details>
+
