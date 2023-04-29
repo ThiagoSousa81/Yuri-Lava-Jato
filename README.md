@@ -14,13 +14,15 @@ Web-Site, com sistema de agendamento incluso para um Lava-Jato.
 
 <details><summary><h2>Páginas</h2></summary>
 
-### WebSite
-
-### Tela de Login
-
-### Tela de Cadastro de Usuários
-
-### Painel de Gerenciamento
+> ### WebSite (Raíz)
+>
+> ### Tela de Login (Usuários)
+>
+> ### Tela de Cadastro (Usuários)
+>
+> ### Painel de Agendamento (Usuários)
+>
+> ### Painel de Gerenciamento (Administrador)
 
 </details>
 
