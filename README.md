@@ -4,11 +4,14 @@ Web-Site, com sistema de agendamento incluso para um Lava-Jato.
 
 <details><summary><h2>Tecnologias</h2></summary>
 
-- PHP
-- MySQL
-- HTML/CSS
-- Bootstrap
-- JavaScript
+|  |  |
+| --- | --- |
+| PHP | <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="55" height="55"/> |
+| MySQL | <img src="https://github.com/devicons/devicon/blob/master/icons/mysql/mysql-original.svg" alt="MySQL" width="55" height="55"/> |
+| HTML | <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" alt="HTML5" width="55" height="55"/> |
+| CSS | <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-original.svg" alt="CSS3" width="55" height="55"/> | 
+| Bootstrap | <img src="https://github.com/devicons/devicon/blob/master/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" width="55" height="55"/>
+| JavaScript | <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" alt="JavaScript" width="55" height="55"/> |
 
 </details>
 
