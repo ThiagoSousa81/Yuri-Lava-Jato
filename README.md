@@ -17,7 +17,7 @@ Web-Site, com sistema de agendamento incluso para um Lava-Jato.
 
 <details><summary><h2>Páginas</h2></summary>
 
-> ### WebSite (Raíz)
+> ### [WebSite](https://github.com/ThiagoSousa81/Yuri-Lava-Jato/blob/main/website.md) (Raíz)
 >
 > ### Tela de Login (Usuários)
 >
