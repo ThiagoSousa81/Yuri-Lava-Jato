@@ -40,7 +40,7 @@ Web-Site, com sistema de agendamento incluso para um Lava-Jato.
 >
 > ### Painel de Agendamento (Usuários) 
 >
-> ### Painel de Gerenciamento (Administrador)
+> ### [Painel de Gerenciamento (Administrador)](https://github.com/ThiagoSousa81/Yuri-Lava-Jato/blob/main/adm.md)
 
 </details>
 
