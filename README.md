@@ -6,7 +6,7 @@ Web-Site, com sistema de agendamento incluso para um Lava-Jato.
   
   ### Para o DNS (Servidor que determina o link do site e hospeda as dependências) temos duas possibilidades:
 
-  > OBS.: O uso de servidor pago implicará em R$ 20,00 (vinte reais) adicionais no pagamento da taxa de prestação de serviço
+  > OBS.: O uso de servidor pago implicará em **aproximadamente** ~R$ 20,00 (vinte reais) adicionais no pagamento da taxa de prestação de serviço
   
   | Gratuito | Pago | 
   | --- | --- |
