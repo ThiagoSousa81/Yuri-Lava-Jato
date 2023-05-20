@@ -2,7 +2,7 @@
 
 Web-Site, com sistema de agendamento incluso para um Lava-Jato.
 
-### [Prévia](https://ebs-systems.epizy.com/services/Yuri/)
+### [Prévia](https://yurilavajato.great-site.net/)
 
 <h2>Domínio</h2>
   
