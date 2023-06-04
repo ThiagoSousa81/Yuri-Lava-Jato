@@ -1,7 +1,11 @@
+<?php
+require_once '../php/class.php';
+$cls = new database();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <title>Yuri Lava-Jato - Login</title>
+    <title>Yuri Lava-Jato - Cadastro</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="/css/style.css" rel="stylesheet">
@@ -40,8 +44,57 @@
           <div class=" align-items-stretch">
             <div class="card" style="border-radius: 15px;">
               <div class="card-body">
+                <?php
+                if (isset($_POST['nome'], $_POST['cpf'], $_POST['tel'], $_POST['whats'], $_POST['email'], $_POST['senha'], $_POST['csenha'], $_POST['rua'], $_POST['n'], $_POST['bairro'], $_POST['cidade'])) {
+                  // Obtém os valores dos campos do formulário
+                  $nome = $_POST['nome'];
+                  $cpf = $_POST['cpf'];
+                  $telefone = $_POST['tel'];
+                  $whatsapp = $_POST['whats'];
+                  $email = $_POST['email'];
+                  $senha = $_POST['senha'];//password_hash($_POST['senha'], PASSWORD_BCRYPT);
+                  $csenha = $_POST['csenha'];//password_hash($_POST['csenha'], PASSWORD_BCRYPT);
+                  $rua = $_POST['rua'];
+                  $numero_casa = $_POST['n'];
+                  $bairro = $_POST['bairro'];
+                  $cidade = $_POST['cidade'];
+                  // Coletando o link mysql
+                  $link = $cls->GetLinkMySQLI();
+
+
+                  // Validando email
+
+                  $result = mysqli_query($link, "SELECT EMAIL_CLIENTE FROM `CLIENTES` where EMAIL_CLIENTE = '".base64_encode($email)."'");
+                  $rows = mysqli_num_rows($result);
+                  if ($rows == 0){
+                    if(filter_var($email, FILTER_VALIDATE_EMAIL))
+                    {//a partir daqui cadastramos no banco de dados
+
+                      if ($senha == $csenha) {
+                        $sql_code = "INSERT INTO CLIENTES (NOME_CLIENTE, CPF_CLIENTE, EMAIL_CLIENTE, HASH_CLIENTE, TELEFONE_CLIENTE, WHATSAPP_CLIENTE, RUA_CLIENTE, N_CASA_CLIENTE, BAIRRO_CLIENTE, CIDADE_CLIENTE) VALUES ('".base64_encode($nome)."', '".base64_encode($cpf)."', '".base64_encode($email)."', '".sha1($password)."', '".base64_encode($telefone)."', '".base64_encode($whatsapp)."', '".base64_encode($rua)."', '".base64_encode($numero_casa)."',  '".base64_encode($bairro)."', '".base64_encode($cidade)."')";
+                        $sql_query = $link->query($sql_code) or die("Falha na execução do código SQL: ".$link->error);
+
+                        echo('<div class="alert alert-success" style="margin-top: 5px"><strong>Usuário cadastrado com sucesso!</strong></div>');
+                      }
+                      else
+                      {
+                        echo('<div class="alert alert-danger" style="margin-top: 5px"><strong>Senhas diferentes!</strong></div>');
+                      }
+
+                    }
+                    else{
+                      echo('<div class="alert alert-danger" style="margin-top: 5px"><strong>Endereço de e-mail inválido!</strong></div>');
+                    }
+                  }
+                  else{
+                    echo('<div class="alert alert-danger" style="margin-top: 5px"><strong>Este endereço de e-mail está linkado a outra conta!</strong></div>');
+                  }
+
+                }                
+
+                ?>
                 <h5 class="card-title">Crie uma conta gratuitamente.</h5>
-                <form>
+                <form method="post">
                   <div class="row">                    
                     <div class="mb-3 col-sm-6">
                       <label class="form-label">Nome:</label>
