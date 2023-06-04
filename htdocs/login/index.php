@@ -48,7 +48,7 @@ $cls = new database();
                 if (isset($_POST['email'], $_POST['senha'])) {
                   $link = $cls->GetLinkMySQLI();
                   $email = base64_encode($_POST['email']);
-                  $senha = password_hash($_POST['senha'], PASSWORD_BCRYPT);
+                  $senha = $_POST['senha'];//password_hash($_POST['senha'], PASSWORD_BCRYPT);
                   
                   $result = mysqli_query($link, "SELECT EMAIL_CLIENTE FROM `CLIENTES` where EMAIL_CLIENTE = '".$email."'");
                   $rows = mysqli_num_rows($result);
@@ -64,7 +64,7 @@ $cls = new database();
                 }
                 ?>
                 <h5 class="card-title">Faça login para realizar um agendamento.</h5>
-                <form>
+                <form method="POST" action="index.php">
                   <div class="mb-3">
                     <label for="cpf" class="form-label">E-mail:</label>
                     <input type="text" class="form-control" id="email" name="email" required>
