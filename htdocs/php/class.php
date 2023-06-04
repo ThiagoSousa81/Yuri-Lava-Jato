@@ -20,10 +20,10 @@ class database{
 
   // Estabelece uma conexão com o banco de dados
   private function connect() {
-    $usuario = 'epiz_34230471';
-    $senha = 'Rpe6ASQScPA';
-    $database = 'epiz_34230471_DATABASE';
-    $host = 'sql109.epizy.com';
+    $usuario = 'xxxxxxxxxxxxx';
+    $senha = 'xxxxxxxxxxxxxxxxx';
+    $database = 'xxxxxxxxxxxxxxxxxxxxxx';
+    $host = 'xxxxxxxxxxxxxxx';
 
     $mysqli = new mysqli($host, $usuario, $senha, $database);
 
