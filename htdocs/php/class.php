@@ -2,10 +2,10 @@
 class database{
   public function GetLinkMySQLI()
   {
-    $usuario = 'epiz_34230471';
-    $senha = 'Rpe6ASQScPA';
-    $database = 'epiz_34230471_DATABASE';
-    $host = 'sql109.epizy.com';
+    $usuario = 'xxxxxxxxxx';
+    $senha = 'xxxxxxxxxxxxxx';
+    $database = 'xxxxxxxxxxxxxxx';
+    $host = 'xxxxxxxxxxxxx';
 
     $mysqli = new mysqli($host, $usuario, $senha, $database);
     return $mysqli;
